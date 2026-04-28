@@ -111,7 +111,12 @@ export default function ProductCard({ product, onAddToCart }: ProductCardProps) 
         </button>
       </div>
       <p
-        className={addStatus === "unchanged" ? "cart-status cart-status-warning" : "cart-status"}
+        className={[
+          addStatus === "unchanged" ? "cart-status cart-status-warning" : "cart-status",
+          addStatus === "idle" && cartQuantity === 0 ? "cart-status-hidden" : "",
+        ]
+          .filter(Boolean)
+          .join(" ")}
         aria-live="polite"
       >
         {cartStatusMessage}

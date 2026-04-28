@@ -171,10 +171,10 @@ export default function Layout() {
           <p>Bags</p>
         </div>
         <div>
-          <h4>Build</h4>
-          <p>React + TypeScript</p>
-          <p>Express API + Prisma ORM</p>
-          <p>Postgres-backed auth/cart/orders</p>
+          <h4>Values</h4>
+          <p>Earth-first materials</p>
+          <p>Low-impact production</p>
+          <p>Carbon-neutral shipping</p>
         </div>
       </footer>
     </div>
